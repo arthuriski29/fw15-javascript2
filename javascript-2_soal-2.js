@@ -22,4 +22,42 @@
                 let periksa1 = array1[1].includes('eu'); //spesifik hanya pada index[1] dari array
                 console.log(periksa1);
 
-                
+//2. charAt()
+              // Adalah metode built in untuk mengakses setiap character index pada sebuah string
+              // metode ini hanya bekerja pada string
+              const kata = 'Pagi'
+              const ambilIndex = kata.charAt(0)
+              //output : P
+
+//3. .map()
+              // method built in untuk membuat array baru dari suatu array
+              // dimana map ini bisa dijalankan fungsi di dalamnya untuk memanipulasi array lama
+              // untuk ditampikan resultnya pada array baru
+              const sebuahWord = [{
+                     "id"   : 1,
+                     "nama"  : "Adi",
+                     "kerja" : "Pengusaha",
+                     "no telp" : 1234,
+              },
+              {
+                     "id"   : 2,
+                     "nama" : "Rio",
+                     "kerja": "Petani",
+                     "no telp": 2345,
+
+              }] 
+
+              const ambilMap = sebuahWord.map(ambil => ambil.nama)
+              console.log(ambilMap) // output ["Rio","Adi"]
+
+//4. .find()
+              // untuk menemukan suatu string pada array
+              // penggunaannya hanya mendeteksi string pertama ditemukan yang sesuai
+              // jika ada banyak, maka yang pertama dideteksi, yang lain diabaikan
+              // mengharuskan fungsi
+              const penemu = ['Einstein', 'Newton', 'Galileo', 'Tesla'];
+              const ambilFind = penemu.find((temu) => temu[2])
+              console.log(ambilFind); // output 'Galileo'
+
+//5.
+
